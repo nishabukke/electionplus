@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Election Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="progress" style="width: 0%;"></div>
+        <div class="header">
+            <div class="header-inner">
+                <div class="header-inner-container">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+                    </div>
+                    <div class="name"><a href="index.html">Election Plus</a></div>
+                    <div class="header-button">
+                        <a href="#" class="trigger">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-content">
+                <div class="header-video">
+                    <video src="images/banner.mp4" autoplay loop muted></video>
+                    <!-- <div class="pause-button" style="opacity: 1;">
+                        <button type="button" aria-label="Pause video" title="Pause video">
+                            <svg viewBox="0 0 10 16"><g fill="currentColor"><rect x="0.200195" y="0.800049" width="2.4" height="14.4"></rect><rect x="7.40039" y="0.800049" width="2.4" height="14.4"></rect></g></svg>
+                        </button>
+                    </div> -->
+                </div>
+                <div class="header-banner-content">Streamline Your Campaign, <br> Expand Your Reach</div>
+                <div class="know-more" id="know-more"><a href="#">Know More</a></div>
+            </div>
+        </div>
+        <div class="menu-outer">
+            <div class="menu">
+                <div class="menu-button" onclick="menuClick();">
+                    <span>Menu</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-bar" id="menu-bar">
+                <div class="menu-bar-main">
+                    <div class="menu-bar-up">Election Plus</div>
+                    <div class="menu-bar-down">
+                            <a href="index.html" class="active">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="services.html">Services</a>
+                            <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+        </div>
+        <div id="circle" class="circle" onclick="closeMenu();">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="main-body">
+             <div class="case-study">
+                <h1 id="heading" class="reveal fadeInUp">Case Study</h1>
+                <div class="blogs">
+                    <div class="blog-inner reveal fadeInAnimation1">
+                        <div class="blog-inner-up">
+                            <img src="images/case-study.avif" alt="">
+                        </div>
+                        <div class="blog-inner-down">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro accusamus temporibus officiis maiores ducimus nostrum.</p>
+                        </div>
+                    </div>
+                    <div class="blog-inner reveal fadeInAnimation2">
+                        <div class="blog-inner-up">
+                            <img src="images/case-study.avif" alt="">
+                        </div>
+                        <div class="blog-inner-down">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro accusamus temporibus officiis maiores ducimus nostrum.</p>
+                        </div>
+                    </div>
+                    <div class="blog-inner reveal fadeInAnimation3">
+                        <div class="blog-inner-up">
+                            <img src="images/case-study.avif" alt="">
+                        </div>
+                        <div class="blog-inner-down">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro accusamus temporibus officiis maiores ducimus nostrum.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+
+             <div class="about">
+                <div class="container">
+
+                    <!--Making Main text-->
+                    <h1 class="text">What is <br> Election Plus? </h1>
+                
+                    <!--------Start Making Header -->
+                    <div class="about-inner">
+                        <!--------Left Part----------->
+                        <div class="left">
+                
+                        </div>
+                        <!--------right Part---------->
+                        <div class="right">
+                              <div>
+                                  <div class="text-box">
+                                      <div>
+                                        <h2 class="welcome">Welcome</h2>
+                                        <p class="reveal-type" data-fg-color="#fff">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ipsam similique fugit culpa. 
+                                        Necessitatibus, nihil delectus sapiente fuga deserunt atque, est temporibus dignissimos doloribus id ipsum odio
+                                        . Similique, corrupti minima?
+                                        thank s for your attention.
+                                        </p>
+                                            <button>Let's GO</button>
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                    <!--------End Header -->
+                </div>
+             </div>
+
+             <div class="services">
+                <section class="timeline">
+                    <h1 id="heading" class="reveal fadeInAnimation2">Services</h1>
+                    <ul>
+                      <li>
+                        <div>
+                          <!-- <time>Services</time> -->
+                          <div class="discovery">
+                            <h1>SEO</h1>
+                            <p>
+                              Laws of motion
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Social Media Marketing</time> -->
+                          <div class="discovery">
+                            <h1>Social Media Marketing</h1>
+                            <p>
+                              Law of electrostatic attraction
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>PPC Management</time> -->
+                          <div class="discovery">
+                            <h1>PPC Management</h1>
+                            <p>
+                              Law of Electric Resistance
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Content Writing</time> -->
+                          <div class="discovery">
+                            <h1>Content Writing</h1>
+                            <p>
+                              Electromagnetic Induction
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Web Design & Development</time> -->
+                          <div class="discovery">
+                            <h1>Web Design & Development</h1>
+                            <p>
+                              Dynamite
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Conversation Optimization</time> -->
+                          <div class="discovery">
+                            <h1>Conversation Optimization</h1>
+                            <p>
+                              X Rays
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Graphic Designing</time> -->
+                          <div class="discovery">
+                            <h1>Graphic Designing</h1>
+                            <p>
+                              Electron
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Reputation Managment</time> -->
+                          <div class="discovery">
+                            <h1>Reputation Managment</h1>
+                            <p>
+                              Radium
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Email Marketing</time> -->
+                          <div class="discovery">
+                            <h1>Email Marketing</h1>
+                            <p>
+                              Quantum Theory
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Video Making & Editing</time> -->
+                          <div class="discovery">
+                            <h1>Video Making & Editing</h1>
+                            <p>
+                              Principle of Relativity
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Tech Assistance</time> -->
+                          <div class="discovery">
+                            <h1>Tech Assistance</h1>
+                            <p>
+                              Photo electric effect
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div>
+                          <!-- <time>Election Monitoring</time> -->
+                          <div class="discovery">
+                            <h1>Election Monitoring</h1>
+                            <p>
+                              Nuclear Reactor
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <h1 id="heading1" class="reveal fadeInAnimation1">Services</h1>
+                    </ul>
+                  </section>
+             </div>
+        </div>
+        <div class="footer">
+            <div class="footer-left">
+                    <div class="footer-left-down">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="services.html">Services</a>
+                    </div>
+                    <div class="footer-left-up">
+                        <i class="fa-solid fa-arrow-up" id="back-to-top"></i>
+                    </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-down">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="footer-up">© All Rights Reserved | Nspiresoft LLP</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <div class="modal-header">
+                <p class="headings text-center">Get in Touch</p>
+            </div>
+            <form>
+                <!-- Name -->
+                <div class="form-group">
+                    <label for="formName" class="d-block">
+                        <i class="fa-regular fa-user form-icon"></i>
+                    </label>
+                    <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+                </div>
+    
+                <!-- E-mail -->
+                <div class="form-group">
+                    <label for="formEmail" class="d-block">
+                        <i class="fa-regular fa-envelope form-icon"></i>
+                    </label>
+                    <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+                </div>
+    
+                <!-- Message -->
+                <div class="form-group message">
+                    <label for="formMessage" class="d-block">
+                        <i class="fa-regular fa-message form-icon"></i>
+                    </label>
+                    <textarea id="formMessage" class="form-control form-control-lg thick"  placeholder="Type your message..."></textarea>
+                </div>
+            
+                <!-- Submit btn -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-form" tabIndex="-1">Send message</button>
+                </div>
+        </form>
+        </div>
+    </div>
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="
+https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js
+"></script>
+    <script src="script.js"></script>
+
+    
+    <script>
+        var circle = document.getElementById('circle');
+        var menuBar = document.getElementById('menu-bar');
+
+        document.onmousemove = function(e){
+            circle.style.left = (e.pageX - 25) + "px";
+            circle.style.top = (e.pageY - 25) + "px";
+            
+            if(menuBar.style.display === 'block'){
+               circle.style.display = 'block';
+            }
+            else{
+                circle.style.display = 'none';
+            }
+        }
+
+
+        
+gsap.registerPlugin(ScrollTrigger)
+
+const splitTypes = document.querySelectorAll('.reveal-type')
+
+splitTypes.forEach((char,i) => {
+
+    const bg = char.dataset.bgColor
+    const fg = char.dataset.fgColor
+
+    const text = new SplitType(char, { types: 'chars'})
+
+    gsap.fromTo(text.chars, 
+        {
+            scaleY: 0,
+            y: -20,
+            transformOrigin: 'top' 
+        },
+        {
+            scaleY: 1,
+            y: 0,
+            duration: 0.3,
+            stagger: 0.02,
+            scrollTrigger: {
+                trigger: char,
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true,
+                markers: false,
+                toggleActions: 'play play reverse reverse'
+            }
+    })
+})
+
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+console.log(e)
+})
+
+function raf(time) {
+lenis.raf(time)
+requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+    </script> 
+</body>
+</html>
