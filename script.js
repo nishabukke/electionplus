@@ -1,9 +1,5 @@
   
 
-
-
-
-
 function jqUpdateSize(){
     // Get the dimensions of the viewport
     // var width = $(window).width();

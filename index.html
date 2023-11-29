@@ -141,8 +141,6 @@
                             </p>
                           </div>
                         </div>
-                      </li>
-                      <li>
                         <div>
                           <!-- <time>Social Media Marketing</time> -->
                           <div class="discovery">
@@ -163,8 +161,6 @@
                             </p>
                           </div>
                         </div>
-                      </li>
-                      <li>
                         <div>
                           <!-- <time>Content Writing</time> -->
                           <div class="discovery">
@@ -185,8 +181,6 @@
                             </p>
                           </div>
                         </div>
-                      </li>
-                      <li>
                         <div>
                           <!-- <time>Conversation Optimization</time> -->
                           <div class="discovery">
@@ -207,8 +201,6 @@
                             </p>
                           </div>
                         </div>
-                      </li>
-                      <li>
                         <div>
                           <!-- <time>Reputation Managment</time> -->
                           <div class="discovery">
@@ -229,8 +221,6 @@
                             </p>
                           </div>
                         </div>
-                      </li>
-                      <li>
                         <div>
                           <!-- <time>Video Making & Editing</time> -->
                           <div class="discovery">
@@ -251,8 +241,6 @@
                             </p>
                           </div>
                         </div>
-                      </li>
-                      <li>
                         <div>
                           <!-- <time>Election Monitoring</time> -->
                           <div class="discovery">
@@ -358,54 +346,52 @@ https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.28/dist/lenis.min.js
             }
         }
 
+      gsap.registerPlugin(ScrollTrigger)
 
-        
-gsap.registerPlugin(ScrollTrigger)
+      const splitTypes = document.querySelectorAll('.reveal-type')
 
-const splitTypes = document.querySelectorAll('.reveal-type')
+      splitTypes.forEach((char,i) => {
 
-splitTypes.forEach((char,i) => {
+          const bg = char.dataset.bgColor
+          const fg = char.dataset.fgColor
 
-    const bg = char.dataset.bgColor
-    const fg = char.dataset.fgColor
+          const text = new SplitType(char, { types: 'chars'})
 
-    const text = new SplitType(char, { types: 'chars'})
-
-    gsap.fromTo(text.chars, 
-        {
-            scaleY: 0,
-            y: -20,
-            transformOrigin: 'top' 
-        },
-        {
-            scaleY: 1,
-            y: 0,
-            duration: 0.3,
-            stagger: 0.02,
-            scrollTrigger: {
-                trigger: char,
-                start: 'top 80%',
-                end: 'top 20%',
-                scrub: true,
-                markers: false,
-                toggleActions: 'play play reverse reverse'
-            }
-    })
-})
+          gsap.fromTo(text.chars, 
+              {
+                  scaleY: 0,
+                  y: -20,
+                  transformOrigin: 'top' 
+              },
+              {
+                  scaleY: 1,
+                  y: 0,
+                  duration: 0.3,
+                  stagger: 0.02,
+                  scrollTrigger: {
+                      trigger: char,
+                      start: 'top 80%',
+                      end: 'top 20%',
+                      scrub: true,
+                      markers: false,
+                      toggleActions: 'play play reverse reverse'
+                  }
+          })
+      })
 
 
-const lenis = new Lenis()
+      const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-console.log(e)
-})
+      lenis.on('scroll', (e) => {
+      console.log(e)
+      })
 
-function raf(time) {
-lenis.raf(time)
-requestAnimationFrame(raf)
-}
+      function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+      }
 
-requestAnimationFrame(raf)
+      requestAnimationFrame(raf)
 
 
     </script> 
