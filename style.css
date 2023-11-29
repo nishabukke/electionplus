@@ -549,7 +549,7 @@ ul li{
 
 /* services */
 
-    .services h1{
+    .mobile-service-heading{
         display: none;
     }
 
@@ -771,8 +771,33 @@ ul li{
 
 
     @media screen and (max-width:360px){
-        .header-banner-content, .know-more, .name{
+        .name{
             display: none;
+        }
+
+        .header-banner-content{
+            font-size: 16px;
+        }
+
+        .know-more{
+            font-size: 12px;
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+
+        .header-inner-container {
+            justify-content: space-around;
+            gap: 25px;
+            padding: 0;
+            padding-top: 20px;
+        }
+
+        .logo img{
+            width: 70%;
+        }
+
+        .header-button{
+            font-size: 12px;
         }
 
         .menu-bar{
@@ -808,15 +833,17 @@ ul li{
         }
 
         .blog-inner-down {
-            padding: 5px 30px;
+            padding: 5px 20px;
         }
 
         .blog-inner-down h2{
             text-align: center;
+            font-size: 18px;
         }
 
         .blog-inner-down p{
             text-align: justify;
+            font-size: 12px;
         }
 
         .container{
