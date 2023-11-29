@@ -770,7 +770,7 @@ ul li{
     } */
 
 
-    @media screen and (max-width:360px){
+    @media screen and (max-width:450px){
         .name{
             display: none;
         }
