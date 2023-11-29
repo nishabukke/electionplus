@@ -290,6 +290,10 @@ ul li{
     transition: max-width .2s cubic-bezier(.445,.05,.55,.95);
 }
 
+.menu-bar i{
+    display: none;
+}
+
 .menu-bar-main{
     position: relative;
     display: flex;
@@ -332,7 +336,20 @@ ul li{
     transition-timing-function: ease-out;
 }
 
-.fa-xmark{
+#circle1{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    transition-duration: .2s;
+    cursor: pointer;
+    transition-timing-function: ease-out;
+}
+
+.circle .fa-xmark{
     color: #000;
     position: absolute;
     top: 50%;
@@ -402,8 +419,6 @@ ul li{
 
 .case-study h1{
     font-family: 'DM Serif Display';
-      width: max-content;
-      display: inline-block;
       background: linear-gradient(to bottom, #43257f, #40c4ff);
       -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -445,6 +460,7 @@ ul li{
 
 .container {
     height: 90vh;
+    position: relative;
 }
 
 .about-inner {
@@ -520,7 +536,7 @@ ul li{
 
 .text {
     position: absolute;
-    top: 35%;
+    top: 45%;
     right: 44.5%;
     font-family: 'DM Serif Display';
     font-size: 36px;
@@ -532,6 +548,10 @@ ul li{
 
 
 /* services */
+
+    .services h1{
+        display: none;
+    }
 
     .timeline{
         /* background-image: url('images/parliament1.png');
@@ -644,10 +664,10 @@ ul li{
         opacity: 0;
         transition: all 0.5s ease-in-out;
     }
-    .timeline ul li:nth-of-type(odd) div {
+    .timeline ul li div:nth-of-type(odd) {
         transform: translate3d(100px, -10px, 0) rotate(10deg);
     }
-    .timeline ul li:nth-of-type(even) div {
+    .timeline ul li div:nth-of-type(even) {
         transform: translate3d(-100px, -10px, 0) rotate(10deg);
     }
     .timeline ul li.in-view div {
@@ -721,7 +741,7 @@ ul li{
 
 
 
-    @media screen and (max-width: 900px) {
+    /* @media screen and (max-width: 900px) {
         .timeline ul li div {
             width: 250px;
             flex-direction: column;
@@ -747,7 +767,174 @@ ul li{
         .timeline ul li:nth-of-type(even) > div {
             left: 45px;
     }
+    } */
+
+
+    @media screen and (max-width:360px){
+        .header-banner-content, .know-more, .name{
+            display: none;
+        }
+
+        .menu-bar{
+            width: 220px;
+            top: 65%;
+        }
+
+        .menu-bar-up {
+            font-size: 20px;
+        }
+
+        .menu-bar-down{
+            gap: 15px;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .menu-bar i{
+            display: block;
+            position: absolute;
+            top: 10%;
+            right: 10%;
+        }
+
+        .case-study h1{
+            font-size: 35px;
+            text-align: center;
+            margin-left: 0;
+        }
+
+        .blogs{
+            flex-direction: column;
+        }
+
+        .blog-inner-down {
+            padding: 5px 30px;
+        }
+
+        .blog-inner-down h2{
+            text-align: center;
+        }
+
+        .blog-inner-down p{
+            text-align: justify;
+        }
+
+        .container{
+            height: auto;
+        }
+
+        .about-inner{
+            display: block;
+        }
+
+        .left{
+            height: 500px;
+        }
+
+        .text{
+            top: 30%;
+            left: 25%;
+            right: 0;
+        }
+
+        .text-box {
+            width: 100%;
+            padding: 0px 20px;
+        }
+
+        .text-box > div > p {
+            font-size: 14px;
+            margin-top: 0;
+        }
+
+        .text-box > div > button {
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .timeline #heading, .timeline #heading1{
+            display: none;
+        }
+
+        .timeline ul li{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .timeline ul li div {
+            width: 250px;
+        }
+
+        .discovery{
+            padding: 0;
+        }
+
+        .discovery h1{
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .discovery p{
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+
+        .mobile-service-heading{
+            display: block;
+            color: #fff;
+            text-align: center;
+            font-size: 35px;
+            font-family: 'DM Serif Display';
+            letter-spacing: 3px;
+        }
+
+        .footer-left{
+            justify-content: center;
+        }
+
+        .footer-left-down{
+            flex-direction: row;
+            font-size: 14px;
+        }
+
+        .footer-left-up{
+            display: none;
+        }
+
+        .footer-right{
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-down{
+            font-size: 16px;
+            gap: 30px;
+        }
+
+        .footer-up p{
+            margin: 0;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .menu{
+            padding: 2px;
+        }
+
+        .menu-button{
+            padding: 30px;
+        }
+
+        .menu-button>span{
+            width: 60px;
+            height: 60px;
+            font-size: 12px;
+        }
     }
+
 
 
 
