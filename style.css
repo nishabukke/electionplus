@@ -231,7 +231,7 @@ ul li{
 .header-banner-content{
     font-size: 48px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1;
     font-weight: 900;
     position: absolute;
     top: 50%;
@@ -554,7 +554,7 @@ ul li{
     }
 
     .timeline{
-        /* background-image: url('images/parliament1.png');
+        /* background-image: url('images/parliament-white.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -771,6 +771,33 @@ ul li{
 
 
     @media screen and (max-width:450px){
+
+        #circle{
+            display: none !important;
+        }
+
+        .modal-content{
+            width: auto;
+        }
+
+        .close-button {
+            width: 20px;
+            line-height: 0;
+            border-radius: 10px;;
+        }
+
+        .modal-header p {
+            font-size: 24px;
+        }
+
+        .form-icon{
+            font-size: 12px;
+        }
+
+        .form-control.thick, .message .form-control {
+            padding: 10px 40px;
+        }
+
         .name{
             display: none;
         }
